@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Australian Training Company - Areas of Study</title>
+</head>
+<body>
+    <!-- Include the navigation bar -->
+    <div id="navbar-placeholder"></div>
+   
+   
+    <main>
+        <section class="content">
+            <h1>Areas of Study</h1>
+            <p>Explore the various areas of study offered by Australian Training Company.</p>
+
+            <ul class="study-areas">
+                <li>
+                    <h2>Information Technology</h2>
+                    <p>Learn about the latest technologies and programming languages.</p>
+                </li>
+                <li>
+                    <h2>Business Administration</h2>
+                    <p>Master the skills needed to excel in the business world.</p>
+                </li>
+                <li>
+                    <h2>Healthcare</h2>
+                    <p>Get trained in healthcare and make a difference in people's lives.</p>
+                </li>
+                <li>
+                    <h2>Creative Arts</h2>
+                    <p>Unleash your creativity in fields like art, design, and music.</p>
+                </li>
+            </ul>
+        </section>
+    </main>
+    <img src="Images/Image2.jpg">
+
+    <footer>
+        <p>&copy; 2023 Australian Training Company</p>
+    </footer>
+
+    <script>
+        
+        function includeNavbar() {
+            const navbarPlaceholder = document.getElementById("navbar-placeholder");
+            if (navbarPlaceholder) {
+                fetch("navbar.html")
+                    .then(response => response.text())
+                    .then(data => {
+                        navbarPlaceholder.innerHTML = data;
+                    });
+            }
+        }
+
+        
+        includeNavbar();
+    </script>
+</body>
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Australian Training Company - Structure of Training Programs</title>
+</head>
+<body>
+    <!-- Include the navigation bar -->
+    <div id="navbar-placeholder"></div>
+
+    <main>
+        <section class="content">
+            <h1>Structure of Training Programs</h1>
+            <p>Learn about the format and structure of our training programs at Australian Training Company.</p>
+
+            <h2>Program Duration</h2>
+            <p>Our training programs typically range from 6 months to 2 years, depending on the course and certification.</p>
+
+            <h2>Coursework</h2>
+            <p>Our programs include a mix of lectures, practical sessions, and hands-on projects to provide comprehensive learning experiences.</p>
+
+            <h2>Flexibility</h2>
+            <p>We offer flexible scheduling options to accommodate both full-time and part-time students. Online courses are also available.</p>
+
+            <h2>Certifications</h2>
+            <p>Upon completion, students receive industry-recognized certifications to boost their career prospects.</p>
+        </section>
+    </main>
+><img src="Images/Image3.jpg">
+    <footer>
+        <p>&copy; 2023 Australian Training Company</p>
+    </footer>
+
+    <script>
+        // Function to include the navigation bar from navbar.html
+        function includeNavbar() {
+            const navbarPlaceholder = document.getElementById("navbar-placeholder");
+            if (navbarPlaceholder) {
+                fetch("navbar.html")
+                    .then(response => response.text())
+                    .then(data => {
+                        navbarPlaceholder.innerHTML = data;
+                    });
+            }
+        }
+
+        // Call the function to include the navigation bar
+        includeNavbar();
+    </script>
+</body>
+</html>

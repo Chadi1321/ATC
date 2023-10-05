@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Australian Training Company - Enrolment Details</title>
+</head>
+<body>
+    <!-- Include the navigation bar -->
+    <div id="navbar-placeholder"></div>
+
+    <main>
+        <section class="content">
+            <h1>Enrolment Details</h1>
+            <p>Explore the enrolment process and start your educational journey with Australian Training Company.</p>
+
+            <h2>Application Procedure</h2>
+            <p>Follow these steps to apply for our training programs:</p>
+            <ol>
+                <li>Complete the online application form.</li>
+                <li>Provide proof of your high school diploma or equivalent.</li>
+                <li>Submit any additional required documents.</li>
+                <li>Pay the application fee.</li>
+            </ol>
+
+            <h2>Requirements</h2>
+            <p>To enroll in our programs, you must meet the following requirements:</p>
+            <ul>
+                <li>High school diploma or equivalent.</li>
+                <li>Minimum age of 18 years.</li>
+                <li>Basic computer skills (for certain courses).</li>
+            </ul>
+
+            <h2>Key Dates</h2>
+            <p>Our enrolment periods typically start in January and September. Be sure to check our website for specific dates and deadlines.</p>
+        </section>
+    </main>
+><img src="Images/download.jpeg">
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Enrollment Data</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+
+        h1 {
+            text-align: center;
+            color: #333;
+            padding: 20px 0;
+        }
+
+        table {
+            border-collapse: collapse;
+            margin: 0 auto;
+            background-color: white;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        th, td {
+            padding: 10px;
+            text-align: center;
+            border: 1px solid #ddd;
+        }
+
+        th {
+            background-color: #333;
+            color: white;
+        }
+
+        tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+
+        tr:hover {
+            background-color: #ddd;
+        }
+    </style>
+</head>
+<body>
+    <h1>Enrollment Data</h1>
+    <table>
+        <tr>
+            <th>Year</th>
+            <th>Enrollments</th>
+        </tr>
+        <tr>
+            <td>2020</td>
+            <td>52</td>
+        </tr>
+        <tr>
+            <td>2021</td>
+            <td>63</td>
+        </tr>
+        <tr>
+            <td>2022</td>
+            <td>15,698</td>
+        </tr>
+        <tr>
+            <td>2023</td>
+            <td>35,509</td>
+        </tr>
+        <tr>
+            <td>2024</td>
+            <td>52,056</td>
+        </tr>
+        <tr>
+            <td>2025</td>
+            <td>98,475</td>
+        </tr>
+    </table>
+</body>
+</html>
+
+    <footer>
+        <p>&copy; 2023 Australian Training Company</p>
+    </footer>
+
+    <script>
+        // Function to include the navigation bar from navbar.html
+        function includeNavbar() {
+            const navbarPlaceholder = document.getElementById("navbar-placeholder");
+            if (navbarPlaceholder) {
+                fetch("navbar.html")
+                    .then(response => response.text())
+                    .then(data => {
+                        navbarPlaceholder.innerHTML = data;
+                    });
+            }
+        }
+
+        // Call the function to include the navigation bar
+        includeNavbar();
+    </script>
+</body>
+</html>
